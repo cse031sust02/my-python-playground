@@ -3,42 +3,49 @@ Playing with python functions
 """
 
 
-def add(a, b):
-    return a+b
+def greet(name, msg):
+    print("Hi {}! {}.".format(name, msg))
 
 
-result = add(2, 3)
-print(result)
+greet("Talha", "Good Morning")
 
+"""Keyword Arguments
 
+Python allows functions to be called using keyword arguments.
 """
-Python functions are first class objects
-
-First Class Function :
-------------------------
-A programming language is said to have First Class Functions if it treats functions as First Class Citizen.
-This means the language allows us to :
-- Pass functions as arguments to another function
-- Return function from another function
-- Assign functions to variables
+greet(msg="Good Morning", name="Talha")
 
 
-Higher Order Functions :
--------------------------
-A higher order function is a function that takes a function as an argument, or returns a function.
-All other functions are first-order functions.
+"""Arbitrary Arguments (*args and **kwargs)
+
+We use *args and **kwargs as an argument when we are unsure about 
+the number of arguments to pass in the functions.
+*args = pass the variable number of non keyword arguments
+**kwargs = pass the variable number of keyword arguments
 """
 
 
-def minus(a, b):
-    return a - b
+def greet_names(*names):
+    """function using *args
+
+    names is a tuple
+    """
+    for name in names:
+        print("Hello", name)
 
 
-def calculator(calc_func, a, b):
-    result = calc_func(a, b)
-    print("{} of {} and {} is : {}".format(calc_func.__name__, a, b, result))
-    return result
+greet_names("Talha", "Sujon", "Alamin")
 
 
-result_add = calculator(add, 1, 2)
-result_minus = calculator(minus, 10, 8)
+def greet_persons(**person):
+    """function using **kwargs
+    
+    person is dictionary
+    """
+    print("Hello Person!")
+    for key, value in person.items():
+        print("Your {} is {}".format(key, value))
+
+
+greet_persons(name="Talha", age=32, country='BD')
+greet_persons(name="Sujon", age=29, country='BD', phone="012345678")
