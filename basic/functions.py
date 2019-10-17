@@ -20,7 +20,7 @@ greet(msg="Good Morning", name="Talha")
 
 We use *args and **kwargs as an argument when we are unsure about 
 the number of arguments to pass in the functions.
-*args = pass the variable number of non keyword arguments
+*args = pass the variable number of non-keyword arguments
 **kwargs = pass the variable number of keyword arguments
 """
 
@@ -49,3 +49,14 @@ def greet_persons(**person):
 
 greet_persons(name="Talha", age=32, country='BD')
 greet_persons(name="Sujon", age=29, country='BD', phone="012345678")
+
+
+"""Lambda Function
+
+Lambda/Anonymous function is a function that is defined without a name.
+we can use it ife when we need a nameless function for a short period of time.
+"""
+
+lamda_func = lambda x : x * 10
+multiply_ten = lamda_func(5)
+print(multiply_ten)

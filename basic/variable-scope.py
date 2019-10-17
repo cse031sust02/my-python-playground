@@ -2,6 +2,25 @@
 Playing with variable scope in python
 
 LEGB : (Local, Enclosing, Global, Built-in)
+"""
+
+"""Basic Example
+
+In the example below, When we are in inner_function(), c is local to us, b is nonlocal and a is global.
+We can read as well as assign new values to c but can only read b and a from inner_function().
+src : https://www.programiz.com/python-programming/namespace#example
+"""
+
+def outer_function():
+    b = 20
+
+    def inner_func():
+        c = 30
+
+
+a = 10
+
+"""More Details 
 
 global : global is used to declare that a variable inside the function is global (outside the function). 
 If we need to read the value of a global variable, it is not necessary to define it as global.
