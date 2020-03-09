@@ -1,6 +1,4 @@
-"""
-Playing with python functions
-"""
+# Playing with python functions
 
 
 def greet(name, msg):
@@ -9,24 +7,20 @@ def greet(name, msg):
 
 greet("Talha", "Good Morning")
 
-"""Keyword Arguments
+# Keyword Arguments
+# Python allows functions to be called using keyword arguments.
 
-Python allows functions to be called using keyword arguments.
-"""
 greet(msg="Good Morning", name="Talha")
 
 
-"""Arbitrary Arguments (*args and **kwargs)
-
-We use *args and **kwargs as an argument when we are unsure about 
-the number of arguments to pass in the functions.
-*args = pass the variable number of non-keyword arguments
-**kwargs = pass the variable number of keyword arguments
-"""
-
+# Arbitrary Arguments (*args and **kwargs)
+# We use * args and **kwargs as an argument when we are unsure about
+# the number of arguments to pass in the functions.
+# *args = pass the variable number of non-keyword arguments
+# **kwargs = pass the variable number of keyword arguments
 
 def greet_names(*names):
-    """function using *args
+    """function using * args
 
     names is a tuple
     """
@@ -38,8 +32,8 @@ greet_names("Talha", "Sujon", "Alamin")
 
 
 def greet_persons(**person):
-    """function using **kwargs
-    
+    """function using ** kwargs
+
     person is dictionary
     """
     print("Hello Person!")
@@ -51,12 +45,14 @@ greet_persons(name="Talha", age=32, country='BD')
 greet_persons(name="Sujon", age=29, country='BD', phone="012345678")
 
 
-"""Lambda Function
+# Lambda Function
+# Lambda/Anonymous function is a function that is defined without a name.
+# We can use it ife when we need a nameless function for a short period of time.
 
-Lambda/Anonymous function is a function that is defined without a name.
-we can use it ife when we need a nameless function for a short period of time.
-"""
+def lamda_func(x): return x * 10
 
-lamda_func = lambda x : x * 10
-multiply_ten = lamda_func(5)
-print(multiply_ten)
+
+five_multiply_ten = lamda_func(5)
+six_multiply_ten = lamda_func(6)
+print(five_multiply_ten)
+print(six_multiply_ten)
