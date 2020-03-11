@@ -49,10 +49,21 @@ greet_persons(name="Sujon", age=29, country='BD', phone="012345678")
 # Lambda/Anonymous function is a function that is defined without a name.
 # We can use it ife when we need a nameless function for a short period of time.
 
-def lamda_func(x): return x * 10
-
+# def lamda_func(x): 
+#     return x * 10
+lamda_func = lambda x : x * 10
 
 five_multiply_ten = lamda_func(5)
 six_multiply_ten = lamda_func(6)
 print(five_multiply_ten)
 print(six_multiply_ten)
+
+# example use case of lambda
+def myfunc(n):
+  return lambda a : a * n
+
+my_doubler = myfunc(2)
+my_tripler = myfunc(3)
+
+print(my_doubler(10))
+print(my_tripler(10))
