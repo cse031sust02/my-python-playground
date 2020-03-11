@@ -19,6 +19,11 @@ def get_me_gift():
 
 # my_gift = get_me_gift
 # my_gift()
+#
+# output
+# ***************
+# I am the gift
+# ***************
 
 
 # Multiple decorators can be chained in Python.
@@ -37,5 +42,4 @@ def ship_my_gift():
     print("I am the gift")
 
 
-my_shipped_gift = ship_my_gift
-my_shipped_gift()
+ship_my_gift()
