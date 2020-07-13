@@ -53,5 +53,5 @@ Pipfile.lock
 ### IDE ###
 
 # Visual Studio Code
-.vscode/*
+.vscode/
 *.code-workspace
