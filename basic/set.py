@@ -24,6 +24,8 @@ print("is pen in the education_items set? : ", is_pen)
 #    Changing Items
 # ========================
 
+# note : sets are mutable but can't contain mutable items.
+
 food_items = {"chocolate", "chips"}
 print("Set of Food Items : ", food_items)
 
@@ -43,7 +45,7 @@ print("New set of Food Items after removing a item : ", food_items)
 food_items.discard("7up")
 print("New set of Food Items after removing a item : ", food_items)
 
-# There is differenece between remove() & discard() methods.
+# Note : There is differenece between remove() & discard() methods.
 # If the item to remove does not exist :
 # - remove() will raise an error.
 # - discard() will NOT raise an error.
@@ -61,6 +63,7 @@ print("Union of two sets : ", union_set)
 union_set = education_items & food_items
 # or we can use, education_items.intersection(food_items)
 print("Intersection of two sets : ", union_set)
+
 
 #   Multiple Ways to Create a Set
 # ==================================

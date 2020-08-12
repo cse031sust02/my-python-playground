@@ -1,7 +1,10 @@
 # Dictionary is a collection which is :
 # - Mutable (Changeable)
-# - Unordered
+# - Ordered*
 # - Allow duplicate members
+
+# *Python’s dictionary has been unordered up until Python 3.6
+# more details : https://softwaremaniacs.org/blog/2020/02/05/dicts-ordered/
 
 student = {
     "name": "Talha",
@@ -31,6 +34,7 @@ print("Number of items in the dictionary : ", len(student))
 
 #    Looping Through
 # ========================
+
 # When looping through a dictionary, the return value are the keys of the dictionary
 print("Keys in the dictionary :")
 for item in student:
@@ -49,6 +53,17 @@ for key, value in student.items():
 #    Changing Items
 # ========================
 
+print("Changing studentent's section to B")
+student['section'] = 'B'
+print("New value of student dict : ", student)
+
+print("Adding new item to student dict")
+student['gender'] = 'male'
+print("New value of student dict : ", student)
+
+print('removing a item (roll) from student dict')
+student.pop('roll')
+print("New value of student dict : ", student)
 
 
 #    MISC

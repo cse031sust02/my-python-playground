@@ -24,6 +24,7 @@ print("Total Items : ", total)
 is_bd = "Bangladesh" in countries
 print("Is Bangladesh in the list? :", is_bd)
 
+
 #    Changing Items
 # ======================
 
@@ -44,6 +45,7 @@ countries2 = countries
 print("Adding Nepal to second list")
 countries2.append("Nepal")
 print("New Country List : ", countries)
+
 
 #     Copy a List
 # ====================
