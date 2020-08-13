@@ -1,4 +1,4 @@
-# A Function is some resusable code take takes inputs and does some stuff 
+# A Function is some resusable code take takes inputs and does some stuff
 # and then returns a result or results
 
 # There are two types of functions in python
@@ -17,16 +17,17 @@ greet("Talha", "Good Morning")
 # - An argument is the value that we send during the function call.
 #   - in the above example : 'Talha' and 'Good Morning'
 
-# We can can send any data type ((string, number, list, tuple, set, 
+# We can can send any data type ((string, number, list, tuple, set,
 # dictionary etc) as arguments of a function and it will be treated
 # as the same data type inside the function.
 # example : sending list as the argument
+
 def my_func(params):
-    print("Type of Parameter is : ",type(params))
+    print("Type of Parameter is : ", type(params))
     for item in params:
         print(item)
 
-my_list = [1, "hello", {"name" : 'test'}]
+my_list = [1, "hello", {"name": 'test'}]
 my_func(my_list)
 
 
@@ -69,7 +70,7 @@ greet_persons(name="Sujon", age=29, country='BD', phone="012345678")
 
 #  The return statement
 # ========================
-# To return any values from a function, we need to use the 
+# To return any values from a function, we need to use the
 # return statement.
 
 def sum(a, b):
@@ -78,23 +79,25 @@ def sum(a, b):
 # note : discussion on return, return None, and no return
 # https://stackoverflow.com/a/15300671/3158021
 
-#  The pass statement 
+
+#  The pass statement
 # ======================
 # Function definitions cannot be empty, but if for any reason
 # we need to have a function definition with no content, we need
 # to put in the pass statement to avoid getting an error.
 
 def my_empty_function():
-  pass
+    pass
+
 
 #  Lambda Function
 # ===================
 # Lambda/Anonymous function is a function that is defined without a name.
 # We can use it ife when we need a nameless function for a short period of time.
 
-lamda_func = lambda x : x * 10
+def lamda_func(x): return x * 10
 # the above function is similar to the below one.
-# def lamda_func(x): 
+# def lamda_func(x):
 #     return x * 10
 
 five_multiply_ten = lamda_func(5)
@@ -103,8 +106,9 @@ print(five_multiply_ten)
 print(six_multiply_ten)
 
 # example use case of lambda
+
 def myfunc(n):
-  return lambda a : a * n
+    return lambda a: a * n
 
 my_doubler = myfunc(2)
 my_tripler = myfunc(3)
