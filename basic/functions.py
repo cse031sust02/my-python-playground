@@ -93,7 +93,7 @@ def my_empty_function():
 #  Lambda Function
 # ===================
 # Lambda/Anonymous function is a function that is defined without a name.
-# We can use it ife when we need a nameless function for a short period of time.
+# We can use it when we need a nameless function for a short period of time.
 
 def lamda_func(x): return x * 10
 # the above function is similar to the below one.
