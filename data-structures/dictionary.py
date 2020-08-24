@@ -31,6 +31,20 @@ print("Does section key exist? : ", is_section)
 
 print("Number of items in the dictionary : ", len(student))
 
+# keys() :
+# returns a view object that contains a list of all the keys
+keys = student.keys()
+print("keys of the dictionary : ", keys)
+
+# values() :
+# returns a view object that contains a list of all the values
+values = student.values()
+print("values of the dictionary : ", values)
+
+# items() : 
+# returns a view object that contains a list of (key, value) tuple pairs
+items = student.items()
+print("items of the dictionary : ", items)
 
 #    Looping Through
 # ========================
