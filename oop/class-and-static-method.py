@@ -1,5 +1,6 @@
-# - In class methods the first parameter (cls) points to the class
+# - In class methods, the first parameter (cls) points to the class
 # - In instance methods, the first parameter (self) points to the instance
+# - In static methods, it does not point to class or instance 
 
 class Employee:
 
@@ -24,6 +25,13 @@ class Employee:
         emp = cls(name, id)
         return emp
 
+    # Static Methods are just like normal function. These are methods
+    # that have a logical connection to the Class, but does not need a
+    # class or instance as an argument.
+    @staticmethod
+    def is_workday():  # <- static method
+        print("Everyday is a workday")
+
 
 # Using the normal constructor
 emp1 = Employee("Talha", "001")
@@ -44,4 +52,5 @@ print(emp1.company)
 emp3 = Employee.add_from_string("Miaj-003")
 print(emp3.__dict__)
 print(emp3.company)
+emp1.is_workday()
 emp3.check_in()
