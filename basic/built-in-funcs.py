@@ -7,3 +7,8 @@
 # max()
 # min()
 # sum()
+
+# objects 
+
+# repr()
+# str()

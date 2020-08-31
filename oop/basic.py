@@ -1,7 +1,7 @@
 # - Class variables are shared by all instances of the class
 # - Instance variables are owned by instances of the class
 
-# note : each method in a class automatically takes the instance
+# note : each (instance) method in a class automatically takes the instance
 # (object) as it's first argument. Best partctise is to name the
 # paramater as 'self'
 
