@@ -85,13 +85,18 @@ class Bird(Animal):
             print('{} can not fly!'.format(self.name))
 
 
-# Bird is a subclass of Animal
+# Bird and Cats are subclasses of Animal
 print(issubclass(Bird, Animal))
 print(issubclass(Bird, Cat))
 
 bird_1 = Bird('Demo Bird 1', 1)
 bird_1.speak()
 bird_1.fly()
+
+# bird_1 is a object of Bird Class
+print(isinstance(bird_1, Bird))
+# bird_1 is also a object of Animal Class
+print(isinstance(bird_1, Animal))
 
 penguin = Bird('Penguin', 1, False)
 penguin.speak()
@@ -125,3 +130,29 @@ class FlyingCar(Car, Aircraft):
 
 my_flying_car = FlyingCar()
 my_flying_car.start()
+
+print(issubclass(FlyingCar, Car))
+print(issubclass(FlyingCar, Aircraft))
+
+
+# Method Resolution Order (MRO) :
+# ==================================
+# 
+# Method Resolution Order (MRO) is the order in which the base classes
+# are searched when executing a method. It plays a vital role in the
+# context of multiple inheritance as single method may be found in
+# multiple super classes.
+
+# more details : 
+# - http://www.srikanthtechnologies.com/blog/python/mro.aspx
+# - https://www.youtube.com/watch?v=cuonAMJjHow
+
+# To get the method resolution order of a class, we can use __mro__
+# attribute or mro() method. It will display the order in which
+# methods are resolved.
+
+print(FlyingCar.__mro__)
+print(FlyingCar.mro())
+
+
+help(my_flying_car)
