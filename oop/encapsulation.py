@@ -2,11 +2,16 @@
 # ===========================
 
 # Encapsulation is one of the fundamentals of OOP. It is a mechanism to
-# wrap up variables and methods together as a single unit (Class).
+# wrap up data variables and memeber functions(methods that manipualte
+# the data) together into a single unit (i.e. class).
 
-# The main idea of encapsulation is to hide implementation details
-# from user and to make sure that private data is protected from
-# outside the class.
+# The main idea of encapsulation is to hide data from user and to make
+# sure that private data is protected from outside the class. 
+#
+# To achieve encapsulation, each object should keeps its state private,
+# inside a class. And the object manages its own state via methods. If
+# anoyone want to communicate with the object, they should use the 
+# methods provided.
 
 
 # Encapsulation in Python :
@@ -34,7 +39,7 @@
 # be accessed from outside the class environment. According to the
 # Official Guideline, public members should have no leading underscores.
 # Also for simple public data attributes, it is best to expose just the
-# attribute name, without complicated accessor/mutator methods.
+# attribute name, without complicated getter/setter methods.
 
 # protected :
 # ------------
