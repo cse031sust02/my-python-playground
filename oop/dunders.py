@@ -19,7 +19,8 @@ class Employee:
         """the __repr__ dunder method
 
         This method is used to return the “official” string representation
-        of an object. This is we you would make an object of the class.
+        of an object. This is usually the string by what we would make an 
+        object of the class.
         
         The goal of __repr__ is to be unambiguous
 
