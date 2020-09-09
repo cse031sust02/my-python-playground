@@ -82,6 +82,7 @@ print(len(my_str))
 # If we want to see the length, need to implement the __len__ method
 # print(len(my_demo_obj))
 
+
 # repr() :
 # ==========
 # Return a string containing a printable representation of an object.
@@ -93,6 +94,7 @@ print(repr(my_tuple))
 print(repr(my_int))
 print(repr(my_str))
 print(repr(my_demo_obj))  # See my experiments on OOP for better understand
+
 
 # str() :
 # ==========
