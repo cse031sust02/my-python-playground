@@ -1,8 +1,10 @@
 # Playing with python decorators
 
-# A decorator is a function that takes another function adds some functionality and returns it.
-# This is similar to packing a gift. The decorator acts as a wrapper. The nature of the object
-# that got decorated (actual gift inside) does not alter. But now, it looks pretty (since it got decorated).
+# A decorator is a function that takes another function adds some
+# functionality and returns it. This is similar to packing a gift.
+# The decorator acts as a wrapper. The nature of the object that got
+# decorated (actual gift inside) does not alter. But now, it looks 
+# pretty (since it got decorated).
 
 
 def decorated_func(original_func):
@@ -17,17 +19,20 @@ def decorated_func(original_func):
 def get_me_gift():
     print("I am the gift")
 
-# my_gift = get_me_gift
-# my_gift()
-#
-# output
+my_gift = get_me_gift
+my_gift()
+
+# Output :
+# =========
+# 
 # ***************
 # I am the gift
 # ***************
 
 
 # Multiple decorators can be chained in Python.
-# A function can be decorated multiple times with different (or same) decorators.
+# A function can be decorated multiple times with different (or same)
+# decorators.
 
 def ship_func(original_func):
     def inner():
@@ -43,3 +48,11 @@ def ship_my_gift():
 
 
 ship_my_gift()
+
+# Output :
+# =========
+# 
+# ***************
+# I am the gift
+# ***************
+# I have been shipped

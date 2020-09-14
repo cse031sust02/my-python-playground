@@ -25,8 +25,10 @@
 # subclasses.
 
 # But In Python, There are no such keywords to effectively restricts
-# access to any instance variable or method. However, there are some
-# conventions to mark the members as public, protected or private.
+# access to any instance variable or method. “Private” instance 
+# variables (that cannot be accessed from outside that class) don’t 
+# really exist in Python. However, there are some conventions to mark
+# the members as public, protected or private.
 
 # Official Pythonic Guideline :
 # https://www.python.org/dev/peps/pep-0008/#designing-for-inheritance
@@ -58,6 +60,7 @@
 
 # more details and discussions :
 # - https://stackoverflow.com/q/1641219/3158021
+# - https://docs.python.org/3/tutorial/classes.html#private-variables
 # - https://www.tutorialsteacher.com/python/private-and-protected-access-modifiers-in-python
 # - https://www.geeksforgeeks.org/access-modifiers-in-python-public-private-and-protected
 
