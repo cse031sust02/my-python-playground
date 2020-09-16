@@ -12,7 +12,7 @@
 # 
 # Packages :
 # ------------
-# Package is namespace which contains multiple package/modules. Usually when
+# Package is a namespace which contains multiple package/modules. Usually when
 # a module becomes very big, we create a package by breaking into multiple
 # modules.
 # 
@@ -20,14 +20,14 @@
 #  
 # Before Python 3.3, the __init__.py file used to be a required part of a
 # package. But, Python 3.3+ treats all folders as packages, so empty 
-# __init__.py files are no longer necessary and can be omitted. 
+# __init__.py files are no longer necessary. 
 # src : https://stackoverflow.com/a/448279/3158021
 # 
 # Library :
 # -----------
 # Library is actually meant to be a collection of various packages. There is
 # no difference between package and python library conceptually.
-# more on : https://stackoverflow.com/q/19198166/3158021
+# more details : https://stackoverflow.com/q/19198166/3158021
 # 
 # The Standard Library : 
 # -------------------------
@@ -48,7 +48,7 @@
 # The Import System :
 # =======================
 # 
-# The import statement is the most common way of importing code from another
+# The import statement is the most common way of importing codes from another
 # module. There are 4 different syntaxes for writing import statements :
 # - import <package>
 # - import <module>
