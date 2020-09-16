@@ -13,7 +13,7 @@ print() # for new line
 print(package_a)
 print(package_b)
 print(dir()) 
-# We can also access the objects in __init__.py file from Package B
+# We can also access the objects from __init__.py file of Package B
 print(package_b.var_b_init)
 package_b.func_in_init()
 print()
@@ -33,7 +33,7 @@ print(dir())
 package_a.module_a.func_a()
 
 # Try the following code after removing all the codes above
-# from package_b import module_b
+from package_b import module_b
 # We will see the output as below :
 # > I am running from __init__.py file of Package B!
 # > I am running from module 1 under Package B!
