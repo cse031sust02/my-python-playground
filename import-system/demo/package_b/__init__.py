@@ -1,4 +1,4 @@
-# When we import a package it runs the __init__.py.py file inside the package directory.
+# When we import a package it runs the __init__.py file inside the package directory.
 
 print("I am running from __init__.py file of Package B!")
 
