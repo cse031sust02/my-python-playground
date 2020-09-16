@@ -1,7 +1,7 @@
 # Let's import the packages I created 
 import package_a, package_b
 # at this, point, we will see the below output :
-# > I am running from __init__.py file of Package B!
+# > I am running from __init__ file of Package B!
 # Because package_b has a __init__.py file, so when we import package_b
 # all the codes on the file will run.
 
@@ -13,7 +13,7 @@ print() # for new line
 print(package_a)
 print(package_b)
 print(dir()) 
-# We can also access the objects from __init__.py file of Package B
+# We can also access the objects in __init__ file from Package B
 print(package_b.var_b_init)
 package_b.func_in_init()
 print()
@@ -33,12 +33,12 @@ print(dir())
 package_a.module_a.func_a()
 
 # Try the following code after removing all the codes above
-from package_b import module_b
+# from package_b import module_b
 # We will see the output as below :
-# > I am running from __init__.py file of Package B!
+# > I am running from __init__ file of Package B!
 # > I am running from module 1 under Package B!
 # So, we can see that although we only imported module_a, Python still runs
-# all of the code from the __init__.py file of that package.
+# all of the code from the __init__ file of that package.
 
 
 # Now, lets import all from the module 1
