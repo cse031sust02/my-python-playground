@@ -84,7 +84,23 @@ print(sys.path)
 # of the code in that __init__.py file.
 # 
 # I have made a demo to test these behaviours.
+#
 # 
+# Importing * From a Package/Module :
+# --------------------------------------
+# 
+# When we use import * statement to import a package or module, the behavior
+# is different for packages and modules.
+# - Package : when __all__ is not defined, import * does not import anything.
+# - Module : when __all__ is not defined, import * imports everything (except
+#   the names begins with an underscore)
+#  
+# To control the default behavior, we can define the __all__ in package and 
+# module with our needs. 
+# 
+# src :
+# - https://stackoverflow.com/q/44834/3158021
+# - https://realpython.com/python-modules-packages/#importing-from-a-package
 # 
 # More Details :
 # =================
