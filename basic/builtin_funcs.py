@@ -85,7 +85,7 @@ print(len(my_str))
 
 # repr() :
 # ==========
-# Return a string containing a printable representation of an object.
+# Returns a string containing a printable representation of an object.
 # This is usually the string contains the value by what we would make
 # an object of the class.
 
@@ -98,7 +98,7 @@ print(repr(my_demo_obj))  # See my experiments on OOP for better understand
 
 # str() :
 # ==========
-# It return a string version of the given object.
+# It returns a string version of the given object.
 
 print(str(my_list))
 print(str(my_tuple))

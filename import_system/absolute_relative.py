@@ -6,7 +6,7 @@
 # straightforward and we can tell exactly where the imported module is by
 # looking at the statement.
 # 
-# Let's assume our project root folder is import-system folder.
+# Let's assume our project root folder is import_system folder.
 
 # Here is an example of Absolute import
 from demo import package_a

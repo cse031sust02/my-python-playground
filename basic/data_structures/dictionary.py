@@ -83,7 +83,7 @@ print("New value of student dict : ", student)
 #    MISC
 # ===========
 
-# We can use immutubale data structures as key in a dictionart
+# We can use immutubale data structures as key in a dictionary
 dict_key_example = {1: "sample number",
                     "str": "sample string", (1, 2, 3): "sample tuple"}
 print("Dictionary with different types of keys : ", dict_key_example)
