@@ -5,7 +5,7 @@ from timeit import default_timer as timer
 # Normal Examples           |
 # ---------------------------
 
-# Using timeit
+# Using timeit package
 start = timer()
 for i in range(10):
     print(i**3)
@@ -13,7 +13,7 @@ end = timer()
 print("using default_timer from timeit module :", end - start)
 
 
-# Using time
+# Using time package
 start_time = time.time()
 for i in range(10):
     print(i**3)

@@ -17,9 +17,9 @@ All other functions are first-order functions.
 """
 
 
-def sum(a, b):
+def addition(a, b):
     """returns sum of a and b"""
-    return a+b
+    return a + b
 
 
 def subtraction(a, b):
@@ -38,5 +38,5 @@ def calculator(calc_func, a, b):
     return result
 
 
-result_add = calculator(sum, 1, 2)
+result_add = calculator(addition, 1, 2)
 result_minus = calculator(subtraction, 10, 8)

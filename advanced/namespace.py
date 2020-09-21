@@ -19,7 +19,7 @@ print(id(x))
 # as a mapping of every name and their corresponding objects. Multiple
 # namespaces may have the same name but pointing to a different object.
 # 
-# Python implements tne global and local namespaces as dictionaries and
+# Python implements the global and local namespaces as dictionaries and
 # the built-in namespace as a module. Python provides built-in functions
 # called globals() and locals() that allow us to access global and local
 # namespace dictionaries.
@@ -30,7 +30,7 @@ print(id(x))
 # function and it remains active until the function returns. This namespace
 # covers the local names inside a function.
 #
-# GLOBAL NAMESPACE  :
+# Global Namespace :
 # -------------------
 # The global namespace contains any names defined at the level of the main
 # program. This namespace also includes names from various imported modules.
@@ -60,11 +60,7 @@ print(id(x))
 # - Enclosing: A scope of all the enclosing functions.
 # - Global : A module level scope which takes care of all the global names.
 # - Built-in : The outermost scope. It holds all the built-in names.
-
-# When a reference is made inside a function, the name is searched in
-# the local namespace, then in the global namespace and finally in the
-# built-in namespace.
-
+# 
 # Scope Resolution :
 # ---------------------
 # When we refer to any name in our code, the interpreter starts searching
@@ -141,7 +137,7 @@ print("import datetime :", dir())
 # ---------------------------
 # It imports all the names from the given module directly in current
 # namespace. Although, we can use the functions from that module
-# directly ( without adding the name of the module as a prefix) by
+# directly (without adding the name of the module as a prefix) by
 # importing in this way. By we also lose the ability to tell which
 # module actually imported that function. As there can be common
 # names that are defined in multiple modules.

@@ -19,8 +19,7 @@ def decorated_func(original_func):
 def get_me_gift():
     print("I am the gift")
 
-my_gift = get_me_gift
-my_gift()
+get_me_gift()
 
 # Output :
 # =========
