@@ -60,8 +60,7 @@ print(a/b)
 # When any exception occur, the Python interpreter stops the current process
 # and passes it to the calling process until it is handled. If not handled,
 # the program will crash.
-#
-# For example, lets say in our program we have a function A which calls
+# For example : lets say in our program we have a function A which calls
 # function B. If an exception occurs in function B but is not handled in that
 # function, the exception will be passed to A. If the execption is never
 # handled, the program will terminate with error.

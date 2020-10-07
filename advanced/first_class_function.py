@@ -1,20 +1,19 @@
-"""
-Python functions are first class objects
+# Python functions are first class objects
 
-First Class Function :
-------------------------
-A programming language is said to have First Class Functions if it treats functions as First Class Citizen.
-This means the language allows us to :
-- Pass functions as arguments to another function
-- Return function from another function
-- Assign functions to variables
+# First Class Function :
+# ------------------------
+# A programming language is said to have First Class Functions if it treats
+# functions as First Class Citizen. This means the language allows us to :
+# - Pass functions as arguments to another function
+# - Return function from another function
+# - Assign functions to variables
 
 
-Higher Order Functions :
--------------------------
-A higher order function is a function that takes a function as an argument, or returns a function.
-All other functions are first-order functions.
-"""
+# Higher Order Functions :
+# -------------------------
+# A higher order function is a function that takes a function as an argument,
+# or returns a function. All other functions are first-order functions.
+
 
 
 def addition(a, b):

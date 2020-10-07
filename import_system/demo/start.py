@@ -41,7 +41,7 @@ package_a.module_a.func_a()
 # all of the code from the __init__ file of that package.
 
 
-# Now, lets import all from the module 1
+# Now, lets import all from the module a
 from package_a.module_a import *
 print()
 print(dir())

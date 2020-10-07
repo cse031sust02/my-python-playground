@@ -75,7 +75,7 @@ print(id(x))
 # - https://www.techbeamers.com/python-namespace-scope/
 
 
-global_var = 'Global Varialbe'  # defined in global namespace
+global_var = 'Global Variable'  # defined in global namespace
 
 
 def outer_func():
@@ -83,8 +83,8 @@ def outer_func():
     outer_var = 'Outer Variable'  # defined in local namespace
 
     print("----INSIDE OUTER FUNCTION---- ")
-    print("LOCAL NAMESPACE  :",locals())
-    print("GLOBAL NAMESPACE :",globals())
+    print("LOCAL NAMESPACE  :", locals())
+    print("GLOBAL NAMESPACE :", globals())
     print()
 
     def inner_func():
@@ -92,8 +92,8 @@ def outer_func():
         inner_var = 'Inner Variable'  # defined in nested local namespace
 
         print("----INSIDE INNER FUNCTION----")
-        print("LOCAL NAMESPACE  :",locals())
-        print("GLOBAL NAMESPACE :",globals())
+        print("LOCAL NAMESPACE  :", locals())
+        print("GLOBAL NAMESPACE :", globals())
         print()
 
         # when we are in inner_function(),
@@ -118,8 +118,8 @@ outer_func()
 
 # outside a function in the main program, locals() behaves the same as globals()
 print("----TOP LEVEL----")
-print("LOCAL NAMESPACE  :",locals())
-print("GLOBAL NAMESPACE :",globals())
+print("LOCAL NAMESPACE  :", locals())
+print("GLOBAL NAMESPACE :", globals())
 print()
 
 
@@ -131,14 +131,14 @@ print()
 # This is the safest way of importing a module as we can avoid namespace
 # pollution.
 import datetime
-print("import datetime :", dir())
+print("after import datetime :", dir())
 
 # from module import * :
 # ---------------------------
 # It imports all the names from the given module directly in current
-# namespace. Although, we can use the functions from that module
+# namespace. Although we can use the functions from that module
 # directly (without adding the name of the module as a prefix) by
-# importing in this way. By we also lose the ability to tell which
+# importing in this way, But we also lose the ability to tell which
 # module actually imported that function. As there can be common
 # names that are defined in multiple modules.
 from datetime import *

@@ -1,5 +1,5 @@
-# A Function is some resusable code take takes inputs and does some stuff
-# and then returns a result or results
+# A Function is some resusable code that takes inputs and does some stuff
+# and then returns a result (or results)
 
 # There are two types of functions in python
 # - Built-in functions (example : print(), input(), type() etc )
