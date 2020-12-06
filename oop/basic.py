@@ -2,7 +2,7 @@
 # - Instance variables are owned by instances of the class
 
 # note : each (instance) method in a class automatically takes the instance
-# (object) as it's first argument. Best partctise is to name the
+# (object) as it's first argument. Best practise is to name the
 # paramater as 'self'
 
 class Employee:

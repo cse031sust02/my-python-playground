@@ -49,7 +49,7 @@ def outer_func():
     print("From Outer Function : Before Calling Outer Function : ", x)
 
     def inner_func():
-        # to modily outer x, uncomment next line
+        # to modify outer x, uncomment next line
         # nonlocal x
         x = 'Inner X'
         print("From Inner Function : ", x)

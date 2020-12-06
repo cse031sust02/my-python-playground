@@ -68,8 +68,8 @@ print("Intersection of two sets : ", union_set)
 #   Multiple Ways to Create a Set
 # ==================================
 
-# We can create set from list
-my_empty_set = ()
+# We can create an empty set
+my_empty_set = set()
 print("Empty Set  : ", my_empty_set)
 
 # We can create set from list

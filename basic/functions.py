@@ -17,7 +17,7 @@ greet("Talha", "Good Morning")
 # - An argument is the value that we send during the function call.
 #   - in the above example : 'Talha' and 'Good Morning'
 
-# We can can send any data type ((string, number, list, tuple, set,
+# We can can send any data type (string, number, list, tuple, set,
 # dictionary etc) as arguments of a function and it will be treated
 # as the same data type inside the function.
 # example : sending list as the argument
