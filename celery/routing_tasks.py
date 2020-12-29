@@ -19,8 +19,6 @@ app.conf.update(
 
 # The task_routes setting can either be a dictionary, or a list of router objects,
 # so in this case we need to specify the setting as a tuple containing a list.
-# We can also override in Task.apply_async(), or send_task() using the routing_key 
-# argument. 
 # details : https://docs.celeryproject.org/en/stable/userguide/routing.html
 
 # dictionary
@@ -39,6 +37,12 @@ app.conf.task_routes={
 # - long tasks will go to queue named 'long'
 # - short tasks will go to queue named 'short'
 # - other tasks will go to default queue (named 'celery')
+
+# We can also specify the queue at runtime with the queue argument to apply_async. 
+# i.e.,: 
+# >>> from proj.tasks import add
+# >>> add.apply_async((2, 2), queue='hipri')
+# src : https://docs.celeryproject.org/en/stable/getting-started/next-steps.html#routing
 
 
 @app.task

@@ -2,7 +2,13 @@ from celery import group, chain
 from workflow_tasks import add, chain_part_1, chain_part_2
 
 # Experiment with Canvas: Designing Work-flows
-# https://docs.celeryproject.org/en/stable/getting-started/next-steps.html#canvas-designing-work-flows
+# ----------------------------------------------
+# Celery ships with a lot of tools to compose tasks together into workflows.
+# 
+# References :
+# - https://docs.celeryproject.org/en/stable/getting-started/next-steps.html#canvas-designing-work-flows
+# - https://www.youtube.com/watch?v=XoMu8vhdc-A
+# - https://www.youtube.com/watch?v=8YLeWxLtVgo
 
 # GROUP
 # ========

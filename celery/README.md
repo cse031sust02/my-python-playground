@@ -69,7 +69,7 @@ $ python basic_demo.py
 
 ## Demo 2 : Routing Tasks
 
-- run the worker which will consume the long_tasks by subscribing long_queue
+- run the worker which will consume long tasks from long_queue
 ```
 $ celery -A routing_tasks worker -n long_worker -Q long_queue -l INFO
 ```
@@ -85,7 +85,7 @@ If you want to automatically declare unknown queues you can
 enable the `task_create_missing_queues` setting.
 ```
 
-- run the worker which will consume the short tasks by subscribing short_queue
+- run the worker which will consume short tasks from short_queue
 ```
 $ celery -A routing_tasks worker -n short_worker -Q short_queue -l INFO
 ```
