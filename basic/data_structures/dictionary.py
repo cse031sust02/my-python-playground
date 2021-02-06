@@ -79,6 +79,25 @@ print('removing a item (roll) from student dict')
 student.pop('roll')
 print("New value of student dict : ", student)
 
+# when we create a new dictionary from another like this : dict1 = dict2,
+# any changes made in dict1 will automatically be made in dict2 (and vice versa).
+# Because dict2 is only a reference to dict1.
+
+student2 = student
+print("Adding Country to the Student Dictionary")
+student2['country'] = "BD"
+print("Original Student: ", student)
+
+
+#     Copy a Dictionary
+# ========================
+
+student3 = student.copy()
+print("New Copied Student : ", student3)
+
+# note : We can now made changes to the new `student3` dictionary,
+# It will NOT affect the original `student` dictionary
+
 
 #    MISC
 # ===========

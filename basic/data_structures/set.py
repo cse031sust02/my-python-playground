@@ -51,7 +51,7 @@ print("New set of Food Items after removing a item : ", food_items)
 # - discard() will NOT raise an error.
 
 
-#    Union &  Intersection
+#    Union & Intersection
 # =============================
 
 # Union

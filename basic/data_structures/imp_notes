@@ -1,0 +1,21 @@
+- List, Dictionary and Set are mutable
+
+- Tuple is immutable
+
+- Sets can't contain mutable items
+
+- In Dictionary, keys should be immutubale data structures (tuple, string, int etc)
+
+copy :
+--------
+Assignment statements in Python do not create copies of objects, they only bind names to an object.
+For collections that are mutable or contain mutable items, If we change one copy, the other copy will be changed.
+
+For example, while creating new list/dictionary/tuple from another list/dictionary/tuple using assignment statements 
+(i.e., new_list = old_list), any modifications to new list/dictionary/tuple will changes new list/dictionary/tuple 
+(and vice versa) everytime. Because they are references to the same underlying object (just different names for the
+same thing).
+
+To create a copy, we can use the builtin copy method or other options.
+
+details : https://stackoverflow.com/a/2612815
