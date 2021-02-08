@@ -12,7 +12,7 @@ import package_a, package_b
 print() # for new line
 print(package_a)
 print(package_b)
-print(dir()) 
+print(globals()) 
 # We can also access the objects in __init__ file from Package B
 print(package_b.var_b_init)
 package_b.func_in_init()

@@ -129,14 +129,16 @@ print()
 # import module :
 # -------------------
 # This is the safest way of importing a module as we can avoid namespace
-# pollution.
+# pollution. We can see that 
 import datetime
 print("after import datetime :", dir())
+# We can see that, now it only imports the 'datetime' name in the current namespace.
+# we can access objects from datatime module using datetime.OBJECT_NAME
 
 # from module import * :
 # ---------------------------
 # It imports all the names from the given module directly in current
-# namespace. Although we can use the functions from that module
+# namespace. Although now we can use the functions from that module
 # directly (without adding the name of the module as a prefix) by
 # importing in this way, But we also lose the ability to tell which
 # module actually imported that function. As there can be common
