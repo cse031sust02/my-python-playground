@@ -8,12 +8,12 @@
 # __init__.py in the directory.
 # 
 # When a regular package is imported, this __init__.py file is implicitly
-# executed, and the objects it defines are bound to names in the package’s
-# namespace.
+# executed, and the objects it (__init__.py file) defines are bound to names in the 
+# package’s namespace.
 # 
 # Example:
 # ----------
-# imagine the following system with three subpackages:
+# Imagine the following system with three subpackages:
 # 
 # parent/
 #     __init__.py
@@ -24,7 +24,8 @@
 #     three/
 #         __init__.py
 # 
-# importing parent.one will implicitly execute parent/__init__.py and parent/one/__init__.py.
+# importing parent.one will implicitly execute parent/__init__.py and
+# parent/one/__init__.py.
 
 
 # Namespace Package :
@@ -34,9 +35,25 @@
 # packages are a mechanism for splitting a single Python package across
 # multiple directories on disk. If there are other modules in the same
 # namespace in different paths, we can import both modules at once using
-# this namespace package. 
+# this namespace package.
 # 
+# Example:
+# ----------
+# consider path1 and path2 as separate entries on our Python-path
 # 
+# path1
+# +--namespace
+#    +--module1.py
+#    +--module2.py
+# path2
+# +--namespace
+#    +--module3.py
+#    +--module4.py
+# 
+# We can import modules from different paths under same namespace like below:
+# from namespace import module1, module3
+# src : https://stackoverflow.com/a/21819733
+
 
 # Differences between namespace packages and regular packages :
 # =============================================================
@@ -50,3 +67,4 @@
 # - https://www.python.org/dev/peps/pep-0420/
 # - https://docs.python.org/3/reference/import.html#regular-packages
 # - https://stackoverflow.com/questions/21819649/namespace-vs-regular-package/21819733#21819733
+# - http://peak.telecommunity.com/DevCenter/setuptools#namespace-packages

@@ -1,3 +1,3 @@
-print("hello world! I am in __init__ in a regualr package")
+print("hello world! I am @ __init__ file of the regular package.")
 
 var_in_regular_pack = True

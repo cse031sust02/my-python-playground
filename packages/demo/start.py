@@ -1,4 +1,6 @@
-# When a regular package is imported, this __init__.py file is implicitly
+# Regular Package : 
+# ===================
+# When a regular package is imported, the __init__.py file is implicitly
 # executed, and the objects it defines are bound to names in the package’s
 # namespace.
 
@@ -15,6 +17,9 @@ print(globals())
 print(dir(regular_package))
 print(regular_package.var_in_regular_pack)
 
+
+# Namespace Package :
+# =====================
 # now, let's import the namespace package
 import namespace_package
 # now if we see the global namespace, we can see that namespace_package is tread as namespace
