@@ -1,4 +1,4 @@
-# Absoulte Imports :
+# Absolute Imports :
 # =======================
 
 # An absolute import uses the full path (starting from the project’s root
@@ -9,8 +9,8 @@
 # Let's assume our project root folder is import_system folder.
 
 # Here is an example of Absolute import
-from demo import package_a
-from demo.package_b.module_b import func_b
+from basic_demo import package_a
+from basic_demo.package_b.module_b import func_b
 
 
 # Relative Imports :
@@ -25,9 +25,7 @@ from demo.package_b.module_b import func_b
 # dot means that the module or package referenced is in the same directory
 # as the current location. Two dots mean that it is in the parent directory
 # and so on.
-# 
-# TODO : I need to discover more on relative imports as it seems little bit
-# complex.
+
 # some usefule links :
 # - https://stackoverflow.com/q/72852/3158021
 # - https://stackoverflow.com/q/12172791/3158021
