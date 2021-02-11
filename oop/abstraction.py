@@ -15,4 +15,5 @@
 
 # Abstraction in Python :
 # ==========================
-# I am not sure about it yet!
+# It says that abstraction can be achieved using abstract classes and methods. I am not sure about
+# it yet! Need to discover more on it.

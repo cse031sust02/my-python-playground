@@ -16,7 +16,7 @@
 # ===================
 #
 # One of the key benefits of inheritance is to minimize the amount of
-# duplicate code by resuing code. Inheritance also helps us to better
+# duplicate code by reusing code. Inheritance also helps us to better
 # organize the code in smaller and simpler units. It also represents
 # real-world relationships well.
 #
@@ -39,7 +39,7 @@ class Animal:
         """An animal will speak in it's own language.
         :param sound: sound of that animal
         """
-        print('{} is speaking. ({})'.format(self.name, sound))
+        print('{} ({} is speaking)'.format(sound, self.name))
 
 
 class Cat(Animal):
@@ -87,7 +87,7 @@ class Bird(Animal):
 
 # Bird and Cats are subclasses of Animal
 print(issubclass(Bird, Animal))
-print(issubclass(Bird, Cat))
+print(issubclass(Bird, Cat))  # False
 
 bird_1 = Bird('Demo Bird 1', 1)
 bird_1.speak()

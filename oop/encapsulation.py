@@ -6,7 +6,7 @@
 # the data) together into a single unit (i.e. class).
 
 # The main idea of encapsulation is to hide data from user and to make
-# sure that private data is protected from outside the class. 
+# sure that private data is protected from outside the class.
 #
 # To achieve encapsulation, each object should keeps its state private,
 # inside a class. And the object manages its own state via methods. If

@@ -1,11 +1,11 @@
-# Python’s approach to interface design is somewhat different when
-# compared to languages like Java, Go, and C++. These languages all
-# have an interface keyword, while Python does not. Python further
-# deviates from other languages in one other aspect. It doesn’t
-# require the class that’s implementing the interface to define all
-# of the interface’s abstract methods.
-# src : https://realpython.com/python-interface/
-
+# Python’s approach to interface design is somewhat different when compared
+# to languages like Java, Go, and C++. There’s no interface keyword in Python.
+# Actaully interfaces are not necessary in Python because Python has proper
+# multiple inheritance, and also ducktyping. If we still need to use interfaces
+# in python, We can create informal or formal interfaces using Abstract Base
+# Classes and other techniques.
+# 
 # More Details and Discussions :
-# - http://masnun.rocks/2017/04/15/interfaces-in-python-protocols-and-abcs/
+# - https://realpython.com/python-interface/
 # - https://stackoverflow.com/a/2124415/3158021
+# - http://masnun.rocks/2017/04/15/interfaces-in-python-protocols-and-abcs/

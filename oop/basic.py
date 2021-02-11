@@ -41,7 +41,7 @@ print(employee_1.fullname())
 # note : we can do it like below,
 # print(Employee.fullname(employee_1))
 # Actually, that is what our code is calling behind the scene?
-# It explains the self argument in the metods in the Class
+# It explains the self argument in the methods in the Class
 
 # we can access the class varaible from both the class & instance
 print("Accessing class variables from the class :")
