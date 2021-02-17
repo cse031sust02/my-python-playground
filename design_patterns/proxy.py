@@ -1,11 +1,17 @@
-"""
+"""Proxy Pattern
+
+What is Proxy Pattern?
+------------------------
 A proxy, in its most general form, is a class functioning as an interface to 
 something else. [wiki]
 
+Example
+----------
 In this example, We have the implementation of a door and then a proxy to secure
 any doors.
 
-References:
+References
+------------
 - https://github.com/kamranahmedse/design-patterns-for-humans#-proxy
 """
 
