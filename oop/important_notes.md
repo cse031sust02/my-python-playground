@@ -20,7 +20,7 @@
 
 - In Python, There are no such keywords like public, private, protected to effectively restricts access to any instance variable or method. “Private” instance variables don’t  really exist in Python. However, there are some conventions to mark the members as public, protected or private.
 
-- We can do getter, setter in python usin @propery and @method.setter
+- We can do getter, setter in python usin @property and @method.setter
 
 ## Abstract Class
 
