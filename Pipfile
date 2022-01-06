@@ -11,7 +11,7 @@ autopep8 = "*"
 redis = "*"
 pika = "*"
 flower = "*"
-celery = "==4.4.7"
+celery = "==5.2.2"
 
 [requires]
 python_version = "3.7"
